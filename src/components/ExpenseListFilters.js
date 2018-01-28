@@ -2,6 +2,11 @@ import { setTextFilter, sortByAmount, sortByDate } from '../actions/filters'
 
 import React from 'react'
 import { connect } from 'react-redux'
+import {DateRangePicker} from 'react-dates'
+
+class ExpenseListFilters extends React.Component {
+    
+}
 
 const ExpenseListFilters = (props) => (
     <div>
@@ -14,6 +19,7 @@ const ExpenseListFilters = (props) => (
             <option value="date">Date</option>
             <option value="amount">Amount</option>
         </select>
+        <DateRangePicker />
     </div>
 )
 
