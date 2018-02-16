@@ -1,9 +1,9 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (env) => {
-  const isProduction = env === 'production'
-  const CSSExtract = new ExtractTextPlugin('styles.css')
+  const isProduction = env === 'production';
+  const CSSExtract = new ExtractTextPlugin('styles.css');
 
   return {
     entry: './src/app.js',
@@ -45,6 +45,5 @@ module.exports = (env) => {
       historyApiFallback: true,
       publicPath: '/dist/'
     }
-  }
-}
-
+  };
+};
