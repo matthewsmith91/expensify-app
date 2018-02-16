@@ -6,7 +6,7 @@ export class ExpensesSummary extends React.Component {
     render() {
         return (
             <div>
-                <p>Viewing {this.props.expenses.length} expenses totaling {expensesTotal(this.props.expenses)}</p>
+                <p>Viewing {this.props.expenses ? this.props.length : 0} expenses totaling {expensesTotal(this.props.expenses)}</p>
             </div>
         )
     }
