@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import expensesTotal from '../selectors/expenses-total'
 
 export class ExpensesSummary extends React.Component {
